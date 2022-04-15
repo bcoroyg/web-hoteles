@@ -67,21 +67,50 @@
           <li class="breadcrumb-item active" aria-current="page">Inicio</li>
         </ol>
       </nav>
+
       <div class="row">
-        <div class="col-12 col-md-4 text-center">
-          <h3>¿Comó funciona?</h3>
-          <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+
+        <div class="col-md-4 text-center">
+
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFuncion" aria-expanded="false" aria-controls="collapseFuncion">
+            ¿Comó funciona?
+          </button>
+          <div class="mt-2 collapse" id="collapseFuncion">
+            <h3>¿Comó funciona?</h3>
+            <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+          </div>
+          
         </div>
-        <div class="col-12 col-md-4 text-center">
-          <h3>¿Dónde puedo reservar?</h3>
-          <p>Elige la ciudad que te interese y luego realizá la reserva.</p>
+
+        <div class="col-md-4 text-center">
+
+          <a class="btn btn-primary" data-toggle="collapse" href="#collapseReservar" role="button" aria-expanded="false" aria-controls="collapseReservar">
+            ¿Dónde puedo reservar?
+          </a>
+          
+          <div class="mt-2 collapse" id="collapseReservar">
+            <h3>¿Dónde puedo reservar?</h3>
+            <p>Elige la ciudad que te interese y luego realizá la reserva.</p>
+          </div>
+
         </div>
-        <div class="col-12 col-md-4 text-center">
-          <h3>¿Cómo pagar?</h3>
-          <p>Utilizá tu tarjeta de crédito.</p>
+
+        <div class="col-md-4 text-center">
+
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePagar" aria-expanded="false" aria-controls="collapsePagar">
+            ¿Cómo pagar?
+          </button>
+          <div class="mt-2 collapse" id="collapsePagar">
+            <h3>¿Cómo pagar?</h3>
+            <p>Utilizá tu tarjeta de crédito.</p>
+          </div>
+
         </div>
+
       </div>
+
       <hr />
+      
       <img class="img-fluid" src="/assets/img/banner.jpg" alt="">
       <div class="pt-4 d-flex flex-wrap justify-content-center">
         <div
@@ -286,7 +315,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
