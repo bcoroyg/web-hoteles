@@ -76,88 +76,142 @@
         </nav>
         <div class="row">
           <div class="col">
-            <h3 class="text-center">Nuestros Precios</h3>
-            <div class="table-responsive">
-              <table class=" table table-striped">
-                <thead class="thead-dark">
-                  <th>Calidad</th>
-                  <th>Guatemala</th>
-                  <th>Quetzaltenango</th>
-                  <th>Sacatepequez</th>
-                  <th>Chimaltenago</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <i class="fas fa-star"></i>
-                    </td>
-                    <td>Q.200</td>
-                    <td>Q.180</td>
-                    <td>Q.150</td>
-                    <td>Q.140</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </td>
-                    <td>Q.210</td>
-                    <td>Q.190</td>
-                    <td>Q.160</td>
-                    <td>Q.150</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </td>
-                    <td>Q.220</td>
-                    <td>Q.200</td>
-                    <td>Q.170</td>
-                    <td>Q.160</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </td>
-                    <td>Q.230</td>
-                    <td>Q.210</td>
-                    <td>Q.180</td>
-                    <td>Q.170</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </td>
-                    <td>Q.240</td>
-                    <td>Q.220</td>
-                    <td>Q.190</td>
-                    <td>Q.160</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="precios-tab" data-toggle="tab" href="#precios" role="tab" aria-controls="precios" aria-selected="true">Precios</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+              </li>
+            </ul>
 
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
-                <div class="card-header" style="background-color: rgb(7, 7, 201); color: white">
-                  Tarjetas aceptadas
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="precios-tab">
+                <h3 class="mt-3 text-center">Nuestros Precios</h3>
+                <div class="table-responsive">
+                  <table class=" table table-striped">
+                    <thead class="thead-dark">
+                      <th>Calidad</th>
+                      <th>Guatemala</th>
+                      <th>Quetzaltenango</th>
+                      <th>Sacatepequez</th>
+                      <th>Chimaltenago</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <i class="fas fa-star"></i>
+                        </td>
+                        <td>Q.200</td>
+                        <td>Q.180</td>
+                        <td>Q.150</td>
+                        <td>Q.140</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </td>
+                        <td>Q.210</td>
+                        <td>Q.190</td>
+                        <td>Q.160</td>
+                        <td>Q.150</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </td>
+                        <td>Q.220</td>
+                        <td>Q.200</td>
+                        <td>Q.170</td>
+                        <td>Q.160</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </td>
+                        <td>Q.230</td>
+                        <td>Q.210</td>
+                        <td>Q.180</td>
+                        <td>Q.170</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </td>
+                        <td>Q.240</td>
+                        <td>Q.220</td>
+                        <td>Q.190</td>
+                        <td>Q.160</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Tarjeta VISA</li>
-                  <li class="list-group-item">Tarjeta VIP</li>
-                </ul>
+              </div>
+
+              <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <h3 class="mt-3 text-center">Tarjetas</h3>
+                <div class="d-flex justify-content-center">
+                  <div class="card" style="width: 18rem">
+                    <div class="card-header" style="background-color: rgb(7, 7, 201); color: white">
+                      Tarjetas aceptadas
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Tarjeta VISA</li>
+                      <li class="list-group-item">Tarjeta VIP</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <h3 class="mt-3 text-center">Comentarios</h3>
+                <div class="card-columns">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote">
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sapiente?.</p>
+                        <footer class="blockquote-footer float-right">Juan</footer>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote">
+                        <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, illo!.</p>
+                        <footer class="blockquote-footer float-right">Oscar</footer>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote">
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, non!!.</p>
+                        <footer class="blockquote-footer float-right">Pedro</footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
+          </div>
+            
           </div>
         </div>
       </div>
