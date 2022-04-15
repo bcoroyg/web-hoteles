@@ -18,305 +18,423 @@
     <title>Inicio</title>
   </head>
 
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/">Hoteles</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarContent"
-        aria-controls="navbarContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body class="vh-100">
 
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/"
-              >Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Términos y condiciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- FIN NAVBAR -->
-    <div class="jumbotron mt-5">
-      <h1 class="display-4 text-center">Hoteles</h1>
-    </div>
+    <div class="h-100 d-flex flex-nowrap flex-column justify-content-between">
+      
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/">Hoteles</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-        </ol>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                >Inicio <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/precios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Términos y condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <!-- FIN NAVBAR -->
 
-      <div class="row">
-
-        <div class="col-md-4 text-center">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFuncion" aria-expanded="false" aria-controls="collapseFuncion">
-            ¿Comó funciona?
-          </button>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <a class="btn btn-primary" data-toggle="collapse" href="#collapseReservar" role="button" aria-expanded="false" aria-controls="collapseReservar">
-            ¿Dónde puedo reservar?
-          </a>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePagar" aria-expanded="false" aria-controls="collapsePagar">
-            ¿Cómo pagar?
-          </button>
-        </div>
-
+      <div class="jumbotron mt-5">
+        <h1 class="display-4 text-center">Hoteles</h1>
       </div>
 
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <div class="mt-2 collapse multi-collapse" id="collapseFuncion">
-            <h3>¿Comó funciona?</h3>
-            <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseFuncion"
+              aria-expanded="false"
+              aria-controls="collapseFuncion"
+            >
+              ¿Comó funciona?
+            </button>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <a
+              class="btn btn-primary"
+              data-toggle="collapse"
+              href="#collapseReservar"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseReservar"
+            >
+              ¿Dónde puedo reservar?
+            </a>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsePagar"
+              aria-expanded="false"
+              aria-controls="collapsePagar"
+            >
+              ¿Cómo pagar?
+            </button>
           </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="mt-2 collapse multi-collapse" id="collapseReservar">
-            <h3>¿Dónde puedo reservar?</h3>
-            <p>Elige la ciudad que te interese y luego realizá la reserva.</p>
+
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="mt-2 collapse multi-collapse" id="collapseFuncion">
+              <h3>¿Comó funciona?</h3>
+              <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="mt-2 collapse multi-collapse" id="collapseReservar">
+              <h3>¿Dónde puedo reservar?</h3>
+              <p>Elige la ciudad que te interese y luego realizá la reserva.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="mt-2 collapse multi-collapse" id="collapsePagar">
+              <h3>¿Cómo pagar?</h3>
+              <p>Utilizá tu tarjeta de crédito.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="mt-2 collapse multi-collapse" id="collapsePagar">
-            <h3>¿Cómo pagar?</h3>
-            <p>Utilizá tu tarjeta de crédito.</p>
+
+        <hr />
+
+        <img class="img-fluid" src="/assets/img/banner.jpg" alt="" />
+        <div class="pt-4 d-flex flex-wrap justify-content-center">
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Guatemala</h4>
+              <h6 class="card-subtitle text-muted">Guatemala</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Guatemala.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Chimaltenango</h4>
+              <h6 class="card-subtitle text-muted">Chimaltenango</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Chimaltenango.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Antigua Guatemala</h4>
+              <h6 class="card-subtitle text-muted">Antigua Guatemala</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Antigua Guatemala.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Quetzaltenango</h4>
+              <h6 class="card-subtitle text-muted">Quetzaltenango</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Quetzaltenango.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Zacapa</h4>
+              <h6 class="card-subtitle text-muted">Zacapa</h6>
+              <p class="card-text">Hotel ubicado en pleno centro de Zacapa.</p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Jalapa</h4>
+              <h6 class="card-subtitle text-muted">Jalapa</h6>
+              <p class="card-text">Hotel ubicado en pleno centro de Jalapa.</p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Santa Rosa</h4>
+              <h6 class="card-subtitle text-muted">Santa Rosa</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Santa Rosa.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Escuintla</h4>
+              <h6 class="card-subtitle text-muted">Escuintla</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Escuintla.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Baja Verapaz</h4>
+              <h6 class="card-subtitle text-muted">Baja Verapaz</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Baja Verapaz.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Alta Verapaz</h4>
+              <h6 class="card-subtitle text-muted">Alta Verapaz</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Alta Verapaz.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Retalhuleu</h4>
+              <h6 class="card-subtitle text-muted">Retalhuleu</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Retalhuleu.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
+          </div>
+          <div
+            class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
+          >
+            <img
+              class="card-img-top"
+              src="/assets/img/hotel.jpg"
+              alt="hotel img"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hotel Huehuetenango</h4>
+              <h6 class="card-subtitle text-muted">Huehuetenango</h6>
+              <p class="card-text">
+                Hotel ubicado en pleno centro de Huehuetenango.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-block rounded-0">
+                <b>+</b> Reservar
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      <hr />
-
-      <img class="img-fluid" src="/assets/img/banner.jpg" alt="">
-      <div class="pt-4 d-flex flex-wrap justify-content-center">
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-        <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-        <div class="card-body">
-            <h4 class="card-title">Hotel Guatemala</h4>
-            <h6 class="card-subtitle text-muted">Guatemala</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Guatemala.</p>
+      <!-- FOOTER -->
+      <footer class="mt-3 py-3 bg-dark text-white lead">
+        <div class="d-flex flex-wrap">
+          <div
+            class="d-flex flex-column col-12 col-md-4 text-center text-md-left"
+          >
+            <a
+              class="text-decoration-none"
+              href="https://www.facebook.com"
+              target="blank"
+              ><i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.twitter.com"
+              target="blank"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a
+              class="text-decoration-none"
+              href="https://www.instagram.com"
+              target="blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
           </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
+          <div class="d-flex flex-column col-12 col-md-4 text-center">
+            <address class="m-0">
+              <p class="mb-0"><i class="fas fa-home"></i> Guatemala</p>
+              <p class="mb-0"><i class="fas fa-phone"></i> +50212345678</p>
+              <p class="mb-0">
+                <i class="far fa-envelope"></i> contacto@guiahotel.com
+              </p>
+            </address>
           </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Chimaltenango</h4>
-            <h6 class="card-subtitle text-muted">Chimaltenango</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Chimaltenango.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Antigua Guatemala</h4>
-            <h6 class="card-subtitle text-muted">Antigua Guatemala</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Antigua Guatemala.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Quetzaltenango</h4>
-            <h6 class="card-subtitle text-muted">Quetzaltenango</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Quetzaltenango.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
+          <div
+            class="d-flex flex-column col-12 col-md-4 text-center text-md-right"
+          >
+            <a class="text-decoration-none" href="/about.html">Nosotros</a>
+            <a class="text-decoration-none" href="#">Precios</a>
+            <a class="text-decoration-none" href="#">Términos y condiciones</a>
+            <a class="text-decoration-none" href="/contacto.html">Contacto</a>
           </div>
         </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Zacapa</h4>
-            <h6 class="card-subtitle text-muted">Zacapa</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Zacapa.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Jalapa</h4>
-            <h6 class="card-subtitle text-muted">Jalapa</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Jalapa.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Santa Rosa</h4>
-            <h6 class="card-subtitle text-muted">Santa Rosa</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Santa Rosa.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Escuintla</h4>
-            <h6 class="card-subtitle text-muted">Escuintla</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Escuintla.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Baja Verapaz</h4>
-            <h6 class="card-subtitle text-muted">Baja Verapaz</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Baja Verapaz.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Alta Verapaz</h4>
-            <h6 class="card-subtitle text-muted">Alta Verapaz</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Alta Verapaz.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Retalhuleu</h4>
-            <h6 class="card-subtitle text-muted">Retalhuleu</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Retalhuleu.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-        <div
-          class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
-        >
-          <img class="card-img-top" src="/assets/img/hotel.jpg" alt="hotel img">
-          <div class="card-body">
-            <h4 class="card-title">Hotel Huehuetenango</h4>
-            <h6 class="card-subtitle text-muted">Huehuetenango</h6>
-            <p class="card-text">Hotel ubicado en pleno centro de Huehuetenango.</p>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block rounded-0"><b>+</b> Reservar</button>
-          </div>
-        </div>
-      </div>
+      </footer>
+      <!-- FIN FOOTER -->
     </div>
-
-    <footer class="mt-3 py-3 bg-dark text-white lead">
-      <div class="d-flex flex-wrap">
-        <div
-          class="d-flex flex-column col-12 col-md-4 text-center text-md-left"
-        >
-          <a
-            class="text-decoration-none"
-            href="https://www.facebook.com"
-            target="blank"
-            ><i class="fab fa-facebook"></i> Facebook
-          </a>
-          <a
-            class="text-decoration-none"
-            href="https://www.twitter.com"
-            target="blank"
-            ><i class="fab fa-twitter"></i> Twitter</a
-          >
-          <a
-            class="text-decoration-none"
-            href="https://www.instagram.com"
-            target="blank"
-            ><i class="fab fa-instagram"></i> Instagram</a
-          >
-        </div>
-        <div class="d-flex flex-column col-12 col-md-4 text-center">
-          <address class="m-0">
-            <p class="mb-0"><i class="fas fa-home"></i> Guatemala</p>
-            <p class="mb-0"><i class="fas fa-phone"></i> +50212345678</p>
-            <p class="mb-0">
-              <i class="far fa-envelope"></i> contacto@guiahotel.com
-            </p>
-          </address>
-        </div>
-        <div
-          class="d-flex flex-column col-12 col-md-4 text-center text-md-right"
-        >
-          <a class="text-decoration-none" href="/about.html">Nosotros</a>
-          <a class="text-decoration-none" href="#">Precios</a>
-          <a class="text-decoration-none" href="#">Términos y condiciones</a>
-          <a class="text-decoration-none" href="/contacto.html">Contacto</a>
-        </div>
-      </div>
-    </footer>
 
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
