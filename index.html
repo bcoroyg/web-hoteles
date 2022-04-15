@@ -163,7 +163,14 @@
               </button>
             </div>
 
-            <button type="button" class="btn btn-primary btn-block rounded-0">
+            <button 
+              type="button" 
+              class="btn btn-primary btn-block rounded-0"
+              data-toggle="popover" 
+              data-placement="left"
+              title="Promociones" 
+              data-content="Consulta las promociones."
+            >
               <b>+</b> Reservar
             </button>
           </div>
@@ -191,7 +198,14 @@
               </button>
             </div>
 
-            <button type="button" class="btn btn-primary btn-block rounded-0">
+            <button 
+              type="button" 
+              class="btn btn-primary btn-block rounded-0"
+              data-toggle="popover" 
+              data-placement="top"
+              title="Promociones" 
+              data-content="Consulta las promociones."
+            >
               <b>+</b> Reservar
             </button>
           </div>
@@ -219,7 +233,14 @@
               </button>
             </div>
 
-            <button type="button" class="btn btn-primary btn-block rounded-0">
+            <button 
+              type="button" 
+              class="btn btn-primary btn-block rounded-0"
+              data-toggle="popover" 
+              data-placement="bottom"
+              title="Promociones" 
+              data-content="Consulta las promociones."
+            >
               <b>+</b> Reservar
             </button>
           </div>
@@ -247,7 +268,14 @@
               </button>
             </div>
 
-            <button type="button" class="btn btn-primary btn-block rounded-0">
+            <button 
+              type="button" 
+              class="btn btn-primary btn-block rounded-0"
+              data-toggle="popover" 
+              data-placement="right"
+              title="Promociones" 
+              data-content="Consulta las promociones."
+            >
               <b>+</b> Reservar
             </button>
           </div>
@@ -555,9 +583,15 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
+      //Tooltip
       $(function () {
           $('[data-toggle="tooltip"]').tooltip()
       });
+
+      //Popover
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
     </script>
   </body>
 </html>
