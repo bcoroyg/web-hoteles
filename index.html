@@ -137,6 +137,7 @@
         <hr />
 
         <img class="img-fluid" src="/assets/img/banner.jpg" alt="" />
+
         <div class="pt-4 d-flex flex-wrap justify-content-center">
           <div
             class="card d-flex flex-column justify-content-between text-center mb-3 mx-2 card-style"
@@ -145,6 +146,7 @@
               class="card-img-top"
               src="/assets/img/hotel.jpg"
               alt="hotel img"
+              data-toggle="tooltip" data-placement="left" title="Hotel Guatemala"
             />
             <div class="card-body">
               <h4 class="card-title">Hotel Guatemala</h4>
@@ -172,6 +174,7 @@
               class="card-img-top"
               src="/assets/img/hotel.jpg"
               alt="hotel img"
+              data-toggle="tooltip" data-placement="top" title="Hotel Chimaltenango"
             />
             <div class="card-body">
               <h4 class="card-title">Hotel Chimaltenango</h4>
@@ -199,6 +202,7 @@
               class="card-img-top"
               src="/assets/img/hotel.jpg"
               alt="hotel img"
+              data-toggle="tooltip" data-placement="bottom" title="Hotel Antigua Guatemala"
             />
             <div class="card-body">
               <h4 class="card-title">Hotel Antigua Guatemala</h4>
@@ -226,6 +230,7 @@
               class="card-img-top"
               src="/assets/img/hotel.jpg"
               alt="hotel img"
+              data-toggle="tooltip" data-placement="right" title="Hotel Quetzaltenango"
             />
             <div class="card-body">
               <h4 class="card-title">Hotel Quetzaltenango</h4>
@@ -548,5 +553,11 @@
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
   </body>
 </html>
