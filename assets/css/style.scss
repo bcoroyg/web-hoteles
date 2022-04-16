@@ -1,4 +1,4 @@
-$blue:    #041079 !default;
+$blue:    #190479 !default;
 
 $primary:       rgba($blue, 0.8) !default;
 $secondary:     #29aca1 !default;
@@ -14,19 +14,19 @@ $secondary:     #29aca1 !default;
 
 .btn-primary {
     background-color: $primary !important;
-    border-color: $primary !important;
+    border: 1px solid $primary !important;
 };
 
 .btn-primary:focus-within{
-    border: 1px solid $primary;
-    background-color: $primary;
-}
+    border: 1px solid $primary !important;
+    background-color: $primary !important;
+};
 
 .btn-primary:hover {
     background-color: rgba($primary, 1) !important;
 };
 
-.nav-link.active{
+.nav-pills > .nav-item > .nav-link.active{
     background-color: rgba($primary, 1) !important;
 };
 
@@ -36,8 +36,8 @@ $secondary:     #29aca1 !default;
 
 .jumbotron {
     color: white;
-}
+};
 
-a{
+footer > div > div > a{
     color: rgba($primary, 1)
-}
+};

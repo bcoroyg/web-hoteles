@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "lite-server",
     "scss": "node-sass -o assets/css/ assets/css/",
-    "less": "lessc assets/css/style.less assets/css/style.css"
+    "less": "lessc assets/css/style.less assets/css/style.css",
+    "watch:scss" : "onchange 'assets/css/*.scss' -- npm run scss"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
   "devDependencies": {
     "less": "^4.1.2",
     "lite-server": "^2.6.1",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2"
   }
 }
