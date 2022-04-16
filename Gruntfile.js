@@ -18,9 +18,16 @@ module.exports = function (grunt) {
         ],
       },
     },
+
+    watch: {
+        files: ['assets/css/*.scss'],
+        tasks: ['css'],
+    },
+
   });
 
   // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-sass");
 
   // Default task(s)
