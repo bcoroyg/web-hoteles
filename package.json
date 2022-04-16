@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "scss": "node-sass -o assets/css/ assets/css/"
+    "scss": "node-sass -o assets/css/ assets/css/",
+    "less": "lessc assets/css/style.less assets/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "less": "^4.1.2",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.1"
   }

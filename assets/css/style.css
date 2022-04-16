@@ -1,29 +1,30 @@
 .card-style {
-  width: 235px; }
-
+  width: 235px;
+}
 .btn:focus {
   outline: none;
-  box-shadow: none; }
-
+  box-shadow: none;
+}
 .btn-primary {
   background-color: rgba(4, 16, 121, 0.8) !important;
-  border-color: rgba(4, 16, 121, 0.8) !important; }
-
+  border-color: rgba(4, 16, 121, 0.8) !important;
+}
 .btn-primary:focus-within {
   border: 1px solid rgba(4, 16, 121, 0.8);
-  background-color: rgba(4, 16, 121, 0.8); }
-
+  background-color: rgba(4, 16, 121, 0.8);
+}
 .btn-primary:hover {
-  background-color: #041079 !important; }
-
-.nav-link.active {
-  background-color: #041079 !important; }
-
+  background-color: #041079 !important;
+}
+.nav-pills > .nav-item > .nav-link.active {
+  background-color: #041079 !important;
+}
 .bg-secondary {
-  background-color: #29aca1 !important; }
-
+  background-color: #29aca1 !important;
+}
 .jumbotron {
-  color: white; }
-
-a {
-  color: #041079; }
+  color: white;
+}
+footer > div > div > a {
+  color: #041079;
+}
