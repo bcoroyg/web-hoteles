@@ -1,4 +1,4 @@
-$blue:    #190479 !default;
+$blue:    #0d0363 !default;
 
 $primary:       rgba($blue, 0.8) !default;
 $secondary:     #29aca1 !default;
@@ -25,6 +25,11 @@ $secondary:     #29aca1 !default;
 .btn-primary:hover {
     background-color: rgba($primary, 1) !important;
 };
+
+.btn-primary:active {
+    box-shadow: 0 0 0 3px rgba($primary, 0.3) !important;
+};
+
 
 .nav-pills > .nav-item > .nav-link.active{
     background-color: rgba($primary, 1) !important;
