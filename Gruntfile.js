@@ -24,12 +24,32 @@ module.exports = function (grunt) {
         tasks: ['css'],
     },
 
+    browserSync: {
+        dev: {
+          bsFiles: { //Browser FIles
+            src: [
+                "/assets/css/*.css", 
+                "*.html", 
+                "/assets/js/*.js"
+            ],
+          },
+          options: {
+            watchTask: true,
+            server: {
+              baseDir: "./", //Directorio base para nuestro servidor.
+            },
+          },
+        },
+    },
+
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-sass");
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s)
   grunt.registerTask("css", ["sass"]);
+  grunt.registerTask("default", ["browserSync", "watch"]);
 };
