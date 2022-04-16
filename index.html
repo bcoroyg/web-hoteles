@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Inicio</title>
   </head>
 
@@ -61,7 +61,7 @@
       </nav>
       <!-- FIN NAVBAR -->
 
-      <div class="jumbotron mt-5">
+      <div class="jumbotron bg-secondary mt-5 rounded-0">
         <h1 class="display-4 text-center">Hoteles</h1>
       </div>
 
@@ -187,7 +187,12 @@
 
             <!-- Botón modal -->
             <div class="mb-2 mx-2">
-              <button type="button" class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#contacto">
+              <button 
+                id="contactoBtn" 
+                type="button" 
+                class="btn btn-outline-success btn-block" 
+                data-toggle="modal" 
+                data-target="#contacto">
                 Contacto
               </button>
             </div>
@@ -561,7 +566,7 @@
       </div>
 
       <!-- FOOTER -->
-      <footer class="mt-3 py-3 bg-dark text-white lead">
+      <footer class="mt-3 py-3 bg-secondary text-white lead">
         <div class="d-flex flex-wrap">
           <div
             class="d-flex flex-column col-12 col-md-4 text-center text-md-left"
@@ -625,6 +630,28 @@
       //Carousel
       $('.carousel').carousel({
         interval: 1500
+      });
+
+      $('#contacto').on('show.bs.modal',function(e){
+        console.log("El modal contacto se esta mostrando.");
+        $('#contactoBtn').removeClass('btn-outline-success');
+        $('#contactoBtn').addClass('btn-primary');
+        $('#contactoBtn').prop('disabled',true);
+      });
+
+      $('#contacto').on('shown.bs.modal',function(e){
+        console.log("El modal contacto se mostro.");
+      });
+
+      $('#contacto').on('hide.bs.modal',function(e){
+        console.log("El modal contacto se oculta.");
+      });
+
+      $('#contacto').on('hidden.bs.modal',function(e){
+        console.log("El modal contacto se oculto.");
+        $('#contactoBtn').prop('disabled', false);
+        $('#contactoBtn').removeClass('btn-primary');
+        $('#contactoBtn').addClass('btn-outline-success')
       });
 
     </script>
