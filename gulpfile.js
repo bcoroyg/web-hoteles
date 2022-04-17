@@ -1,5 +1,5 @@
 import gulp from "gulp";
-import dartSass from "sass";
+import dartSass from "node-sass";
 import gulpSass from "gulp-sass";
 const sass = gulpSass(dartSass);
 
@@ -17,19 +17,16 @@ import imagemin from "gulp-imagemin";
 import flatmap from "gulp-flatmap";
 import concat from 'gulp-concat';
 
-
-import minifycss from 'gulp-minify-css';
-
 gulp.task("sass", function () {
   return gulp
     .src("assets/css/*.scss")
-    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest("assets/css"));
 });
 
 
 gulp.task("sass:watch", function () {
-  return gulp.watch("./assets/css/*.scss", gulp.series("sass"));
+  return gulp.watch("assets/css/*.scss", gulp.series("sass"));
 });
 
 gulp.task("browser-sync", function () {
@@ -48,39 +45,38 @@ gulp.task("browser-sync", function () {
 
 gulp.task("default", gulp.parallel("sass:watch", "browser-sync"));
 
-//Borrar
-gulp.task("clean", function () {
-  return del(["dist"]);
+//Concat
+gulp.task("styles", function(){
+  return gulp.src([
+    'node_modules/@fortawesome/fontawesome-free/css/all.min.css',
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+  ])
+  .pipe(concat('fontawesome-bootstrap.css'))
+  .pipe(gulp.dest('assets/css/'))
+});
+
+//Imagenes
+gulp.task("imagemin", function () {
+  return gulp
+    .src("./assets/img/*.{png,gif,jpg,jpeg}")
+    .pipe(
+      imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })
+    )
+    .pipe(gulp.dest("dist/assets/img/"));
 });
 
 //Fonts
 gulp.task("copyfonts", function () {
   return gulp
     .src(
-      "./node_modules/@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,svg,eot,otf}*"
+      "node_modules/@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,svg,eot,otf}"
     )
-    .pipe(gulp.dest("./dist/assets/fonts"));
+    .pipe(gulp.dest("dist/assets/webfonts"));
 });
 
-//Imagenes
-gulp.task("imagemin", function () {
-  return gulp
-    .src("./assets/img/*.{png,jpg,jpeg,gif}*")
-    .pipe(
-      imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })
-    )
-    .pipe(gulp.dest("./dist/assets/img"));
-});
-
-//Concat
-gulp.task("styles", function(){
-  return gulp.src([
-    'node_modules/@fortawesome/fontawesome-free/css/all.min.css',
-    'node_modules/bootstrap/dist/css/bootstrap.min.css',
-    'assets/css/style.css'
-  ])
-  .pipe(concat('style.css'))
-  .pipe(gulp.dest('assets/css'))
+//Borrar
+gulp.task("clean", function () {
+  return del(["dist"]);
 });
 
 //Usemin
@@ -91,7 +87,7 @@ gulp.task("usemin", function () {
       flatmap(function (stream, file) {
         return stream.pipe(
           usemin({
-            css: [minifycss(), rev()],
+            css: [rev()],
             html: [
               function () {
                 return htmlmin({ collapseWhitespace: true });
@@ -107,5 +103,5 @@ gulp.task("usemin", function () {
     .pipe(gulp.dest("dist/"));
 });
 
-gulp.task("build", gulp.series("clean", "sass", "styles","copyfonts", "imagemin", "usemin"));
+gulp.task("build", gulp.series("clean", "sass", "styles", "copyfonts", "imagemin", "usemin"));
 

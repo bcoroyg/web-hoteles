@@ -7,26 +7,40 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- build:css assets/css/style.css-->
-    <link
+    <!-- GRUNT -->
+
+    <!-- build:css assets/css/styles.css-->
+<!--         <link
       rel="stylesheet"
-      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
      />
     <link
       rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" /> -->
     <!-- endbuild -->
+    
+
+    <!-- GULP -->
+
+    <!-- build:css assets/css/styles.css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- endbuild -->
+
+
 
     <title>Contacto</title>
   </head>
 
   <body class="vh-100">
+
     <div class="h-100 d-flex flex-nowrap flex-column justify-content-between">
+
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="/">Hoteles</a>
+        <a class="navbar-brand" href="./">Hoteles</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,18 +56,18 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/"
+              <a class="nav-link" href="./"
                 >Inicio <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">Nosotros</a>
+              <a class="nav-link" href="about.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/precios.html">Precios</a>
+              <a class="nav-link" href="precios.html">Precios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/contacto.html">Contacto</a>
+              <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -70,7 +84,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item" aria-current="page">
-              <a href="/">Inicio</a>
+              <a href="./">Inicio</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">Contacto</li>
           </ol>
@@ -164,9 +178,9 @@
           <div
             class="d-flex flex-column col-12 col-md-4 text-center text-md-right"
           >
-            <a class="text-decoration-none" href="/about.html">Nosotros</a>
-            <a class="text-decoration-none" href="/precios.html">Precios</a>
-            <a class="text-decoration-none" href="/contacto.html">Contacto</a>
+            <a class="text-decoration-none" href="about.html">Nosotros</a>
+            <a class="text-decoration-none" href="precios.html">Precios</a>
+            <a class="text-decoration-none" href="contacto.html">Contacto</a>
           </div>
         </div>
       </footer>
